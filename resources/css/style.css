@@ -48,72 +48,27 @@
     margin: 10px 0;
 }
 
+.img-icon-container {
+    aspect-ratio: 1 / 1;
+}
 
-/* NAV ICONS */
-
-.nav-container .img-icon {
+.img-icon {
     width: 50px;
     height: 50px;
-    margin-top: 20px;
     border-radius: 50%;
     background-color: #EEEEEE;
 }
 
-.nav-item svg  {
-    width: 40px;
-    height: 40px;
-}
-
-#nav-home path {
-    fill: var(--dark-nav-icon);
-}
-
-#nav-projects path {
-    stroke: var(--dark-nav-icon);
-}
-
-.skills-st0 {
-    fill: none;
-    stroke: var(--dark-nav-icon);
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-}
-
-.skills-st1 {
-    fill: none;
-    stroke: var(--dark-nav-icon);
-    stroke-width: 2;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-}
-
-.skills-st2 {
-    fill: none;
-    stroke: var(--dark-nav-icon);
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-}
-
-.career-st0 {
-    fill: var(--dark-nav-icon);
-}
-
-#nav-contact path {
-    stroke: var(--dark-nav-icon)
-}
-
-.links svg {
-    width: 30px;
-    height: 30px;
-    margin: 5px 0;
-    fill: var(--dark-social-icon);
+.nav-container-item {
+    width: 100%;
 }
 
 .links {
-    height: 200px;
+    margin-bottom: 50px;
+}
+
+.links a {
+    height: max-content;
 }
 
 /* HEADER */

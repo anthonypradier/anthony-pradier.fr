@@ -1,0 +1,141 @@
+:root {
+    --dark-primary: #1B1525;
+    --dark-secondary: #14121F;
+    --dark-tertiary: #291F43;
+
+    --dark-title: #BAA7FF;
+    --dark-subtitle: #E2DDFE;
+    --dark-nav-icon: #E2DDFE;
+    --dark-icon-hover: #D19DFF;
+    --dark-social-icon: #B4B4B4;
+    --dark-text: #EEEEEE;
+
+    --dark-primary-separator: #473876;
+    --dark-secondary-separator: #291F43;
+    --dark-primary-border: #3C2E69;
+    --dark-secondary-border: #56468B;
+}
+
+/* NAV */
+
+.nav-item svg  {
+    width: 40px;
+    height: 40px;
+}
+
+#nav-home path {
+    fill: var(--dark-nav-icon);
+}
+
+#nav-projects path {
+    stroke: var(--dark-nav-icon);
+}
+
+.skills-st0 {
+    fill: none;
+    stroke: var(--dark-nav-icon);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skills-st1 {
+    fill: none;
+    stroke: var(--dark-nav-icon);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skills-st2 {
+    fill: none;
+    stroke: var(--dark-nav-icon);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.career-st0 {
+    fill: var(--dark-nav-icon);
+}
+
+#nav-contact path {
+    stroke: var(--dark-nav-icon)
+}
+
+
+
+/* LINKS */
+
+.links svg {
+    width: 30px;
+    height: 30px;
+    margin: 2px 0;
+    fill: var(--dark-social-icon);
+}
+
+#linkedin path {
+    transition: all .2s ease;
+}
+
+#linkedin:hover path  {
+    fill: var(--dark-icon-hover);
+    transition: all .2s ease;
+}
+
+#twitter path {
+    transition: all .2s ease;
+}
+
+#twitter:hover path {
+    fill: var(--dark-icon-hover);
+    transition: all .2s ease;
+}
+
+#insta {
+    fill: none;
+}
+
+#insta path, #c1 {
+    stroke: var(--dark-social-icon);
+    transition: all .2s ease;
+}
+
+#c2 {
+    fill: var(--dark-social-icon);
+    transition: all .2s ease;
+}
+
+#insta:hover path {
+    stroke: var(--dark-icon-hover);
+    transition: all .2s ease;
+}
+
+#insta:hover #c1 {
+    stroke: var(--dark-icon-hover);
+    transition: all .2s ease;
+}
+
+#insta:hover #c2 {
+    fill: var(--dark-icon-hover);
+    transition: all .2s ease;
+}
+
+#discord path {
+    transition: all .2s ease;
+}
+
+#discord:hover path {
+    fill: var(--dark-icon-hover);
+    transition: all .2s ease;
+}
+
+#github path {
+    transition: all .2s ease;
+}
+
+#github:hover path {
+    fill: var(--dark-icon-hover);
+    transition: all .2s ease;
+}

@@ -1,3 +1,31 @@
+:root {
+    --dark-primary: #1B1525;
+    --dark-secondary: #14121F;
+    --dark-tertiary: #291F43;
+
+    --dark-title: #BAA7FF;
+    --dark-subtitle: #E2DDFE;
+    --dark-nav-icon: #E2DDFE;
+    --dark-social-icon: #B4B4B4;
+    --dark-text: #EEEEEE;
+
+    --dark-primary-separator: #473876;
+    --dark-secondary-separator: #291F43;
+    --dark-primary-border: #3C2E69;
+    --dark-secondary-border: #56468B;
+}
+
+.relative {
+    position: relative;
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .flex {
     display: flex;
 }
