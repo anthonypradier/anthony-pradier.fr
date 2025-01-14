@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.borderr {
+    border: solid 1px red;
+}
+
+.borderb {
+    border: solid 1px blue;
+}
+
+.borderg {
+    border: solid 1px green;
+}
+

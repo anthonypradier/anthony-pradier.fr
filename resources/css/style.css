@@ -31,6 +31,94 @@
     box-sizing: border-box;
 }
 
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: var(--dark-secondary);
+}
+
+.nav-links {
+    height: 85%;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+
+/* NAV ICONS */
+
+.nav-container .img-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+}
+
+.nav-item svg  {
+    width: 40px;
+    height: 40px;
+}
+
+#nav-home path {
+    fill: var(--dark-nav-icon);
+}
+
+#nav-projects path {
+    stroke: var(--dark-nav-icon);
+}
+
+.skills-st0 {
+    fill: none;
+    stroke: var(--dark-nav-icon);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skills-st1 {
+    fill: none;
+    stroke: var(--dark-nav-icon);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skills-st2 {
+    fill: none;
+    stroke: var(--dark-nav-icon);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.career-st0 {
+    fill: var(--dark-nav-icon);
+}
+
+#nav-contact path {
+    stroke: var(--dark-nav-icon)
+}
+
+.links svg {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    fill: var(--dark-social-icon);
+}
+
+.links {
+    height: 200px;
+}
+
+/* HEADER */
+
 .header {
     height: 100vh;
+    background-color: var(--dark-primary);
 }
