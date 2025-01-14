@@ -1,0 +1,36 @@
+:root {
+    --dark-primary: #1B1525;
+    --dark-secondary: #14121F;
+    --dark-tertiary: #291F43;
+
+    --dark-title: #BAA7FF;
+    --dark-subtitle: #E2DDFE;
+    --dark-nav-icon: #E2DDFE;
+    --dark-social-icon: #B4B4B4;
+    --dark-text: #EEEEEE;
+
+    --dark-primary-separator: #473876;
+    --dark-secondary-separator: #291F43;
+    --dark-primary-border: #3C2E69;
+    --dark-secondary-border: #56468B;
+}
+
+@font-face {
+    font-family: 'Saira', 'Open Sans';
+    src: url('../fonts/Saira/static/Saira-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Anek', 'Open Sans';
+    src: url('../fonts/Anek_Gurmukhi/static/AnekGurmukhi-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100vh;
+}
