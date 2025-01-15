@@ -23,12 +23,17 @@
     height: 40px;
 }
 
-#nav-home path {
-    fill: var(--dark-nav-icon);
+.nav-item svg:hover {
+    cursor: pointer;
 }
 
-#nav-projects path {
-    stroke: var(--dark-nav-icon);
+#nav-home path {
+    fill: var(--dark-nav-icon);
+    transition: all .3s ease;
+}
+
+#nav-home:hover path {
+    fill: var(--dark-icon-hover);
 }
 
 .skills-st0 {
@@ -38,6 +43,7 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
+    transition: all .3s ease;
 }
 
 .skills-st1 {
@@ -46,22 +52,47 @@
     stroke-width: 2;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
+    transition: all .3s ease;
 }
 
-.skills-st2 {
-    fill: none;
+#nav-skills:hover .skills-st0 {
+    stroke: var(--dark-icon-hover);
+    transition: all .3s ease;
+}
+
+#nav-skills:hover .skills-st1 {
+    stroke: var(--dark-icon-hover);
+    transition: all .3s ease;
+}
+
+#nav-projects path {
+    transition: all .3s ease;
     stroke: var(--dark-nav-icon);
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
+}
+
+#nav-projects:hover path {
+    stroke: var(--dark-icon-hover);
+    transition: all .3s ease;
 }
 
 .career-st0 {
     fill: var(--dark-nav-icon);
+    transition: all .3s ease;
+}
+
+#nav-career:hover .career-st0 {
+    fill: var(--dark-icon-hover);
+    transition: all .3s ease;
 }
 
 #nav-contact path {
-    stroke: var(--dark-nav-icon)
+    stroke: var(--dark-nav-icon);
+    transition: all .3s ease;
+}
+
+#nav-contact:hover path {
+    stroke: var(--dark-icon-hover);
+    transition: all .3s ease;
 }
 
 
@@ -71,7 +102,6 @@
 .links svg {
     width: 30px;
     height: 30px;
-    margin: 2px 0;
     fill: var(--dark-social-icon);
 }
 

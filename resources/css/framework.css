@@ -15,8 +15,22 @@
     --dark-secondary-border: #56468B;
 }
 
+@font-face {
+    font-family: 'Saira';
+    src: url('../fonts/Saira/static/Saira-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Anek';
+    src: url('../fonts/Anek_Gurmukhi/static/AnekGurmukhi-Regular.ttf');
+}
+
 .relative {
     position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .center-box {
@@ -53,6 +67,34 @@
     align-items: center;
 }
 
+.gap100 {
+    gap: 100px;
+}
+
+.gap50 {
+    gap: 50px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w50 {
+    width: 50%;
+}
+
 .borderr {
     border: solid 1px red;
 }
@@ -65,3 +107,15 @@
     border: solid 1px green;
 }
 
+.separator {
+    height: 1px;
+    background: var(--dark-primary-separator);
+}
+
+.title {
+    font-family: Anek;
+}
+
+.text {
+    font-family: Saira;
+}

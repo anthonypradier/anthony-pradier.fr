@@ -16,12 +16,12 @@
 }
 
 @font-face {
-    font-family: 'Saira', 'Open Sans';
+    font-family: 'Saira';
     src: url('../fonts/Saira/static/Saira-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Anek', 'Open Sans';
+    font-family: 'Anek';
     src: url('../fonts/Anek_Gurmukhi/static/AnekGurmukhi-Regular.ttf');
 }
 
@@ -29,6 +29,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    margin-left: 80px;
 }
 
 .nav-container {
@@ -46,6 +50,12 @@
 
 .nav-item {
     margin: 10px 0;
+}
+
+/* TODO: ce style est facultatif, si pour la responsivité cela pose problème, enlever */
+.nav-item a {
+    display: block;
+    height: 40px;
 }
 
 .img-icon-container {
@@ -68,7 +78,9 @@
 }
 
 .links a {
-    height: max-content;
+    display: block;
+    margin: 2px 0;
+    max-height: 30px;
 }
 
 /* HEADER */
@@ -76,4 +88,50 @@
 .header {
     height: 100vh;
     background-color: var(--dark-primary);
+}
+
+/* .bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+} */
+
+.header-container {
+    height: 100%;
+    margin-left: 80px;
+}
+
+.main-title {
+    color: var(--dark-title);
+    font-size: 5.5em;
+    font-weight: 1000;
+}
+
+.header-text h4 {
+    color: var(--dark-subtitle);
+}
+
+.header-text .separator {
+    width: 40vw;
+    margin: 30px 0;
+}
+
+.header-text .description {
+    font-size: 1.2em;
+    width: 120%;
+    color: var(--dark-text);
+}
+
+.profile-img-container {
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+}
+
+.profile-img {
+    width: 350px;
+    background-color: var(--dark-text);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
 }
