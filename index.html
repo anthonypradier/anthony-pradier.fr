@@ -16,7 +16,7 @@
                 <!-- <img src="" alt="profile icon" /> -->
                 <div class="img-icon center-box"></div>
             </div>
-            <!-- TODO: mettre les icones de nav dans des links -->
+            <!-- TODO: box shadow inset pour les nav-item hover ? -->
             <nav
                 class="nav nav-container-item flex-between flex-column align-center"
             >
@@ -232,32 +232,167 @@
         </div>
         <!-- TODO: mettre les éléments en position absolute pour pouvoir les disposer correctement, avec des margins relatives -->
         <header class="header" id="home">
-            <div class="header-container container relative borderr">
+            <div class="header-container relative">
                 <!-- <img
                     class="bg-img"
                     src="./resources/images/pexels-goumbik-574071.jpg"
                     alt="background image"/> -->
 
-                <div class="header-text absolute borderb">
+                <div class="header-text absolute">
                     <h1 class="main-title title">
                         Salut, <br />
                         Moi c'est Anthony
                     </h1>
-                    <h4 class="text">Aussi connu sous le nom de Papi</h4>
-                    <div class="separator"></div>
+                    <h4 class="title">Aussi connu sous le nom de Papi</h4>
+                    <div class="separator w70 vm30"></div>
                     <p class="description text">
                         Je m'appelle Anthony Pradier.<br />Actuellement étudiant
                         en 2e année du cycle ingénieur à l'école <br />ESIEE
                         Paris, j'aime apprendre, imaginer et créer des choses à
                         travers le code.<br />
                         Cela fait 6 ans que j'ai découvert la programmation et
-                        que je conçois des projets personnels
+                        que je conçois des projets personnels.
                     </p>
                 </div>
-                <div class="profile-img-container absolute borderg">
+                <div class="profile-img-container absolute">
                     <div class="profile-img"></div>
                 </div>
+                <div class="separator w90" id="header-separator"></div>
             </div>
         </header>
+
+        <!-- SKILLS SECTION -->
+
+        <section id="skills">
+            <div class="skills-container container">
+                <h1 class="section-title">compétences</h1>
+                <div class="skills-box-container w80 flex-between">
+                    <div class="skills-box" id="skill-box1">
+                        <h3 class="title">Programmation</h3>
+                        <div class="separator w90"></div>
+                        <div class="skills flex flex-column">
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/java-svgrepo-com.svg"
+                                    alt="Java icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">Java</h4>
+                            </div>
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/python-svgrepo-com.svg"
+                                    alt="Python icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">Python</h4>
+                            </div>
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/javascript-16-svgrepo-com.svg"
+                                    alt="JavaScript icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">JavaScript</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-box" id="skill-box2">
+                        <h3 class="title">Frontend</h3>
+                        <div class="separator w90"></div>
+                        <div class="skills flex flex-column">
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/html5-fill-svgrepo-com.svg"
+                                    alt="HTML icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">HTML</h4>
+                            </div>
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/html3-svgrepo-com.svg"
+                                    alt="CSS icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">CSS</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-box" id="skill-box3">
+                        <h3 class="title">Backend</h3>
+                        <div class="separator w90"></div>
+                        <div class="skills flex flex-column">
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/database-svgrepo-com.svg"
+                                    alt="SQL icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">SQL</h4>
+                            </div>
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/php-alt-svgrepo-com.svg"
+                                    alt="PHP icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">PHP</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-box" id="skill-box4">
+                        <h3 class="title">Autres</h3>
+                        <div class="separator w90"></div>
+                        <div class="skills flex flex-column">
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/blender-svgrepo-com.svg"
+                                    alt="Blender icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <h4 class="skill-name">Blender</h4>
+                            </div>
+                            <div class="skill">
+                                <img
+                                    class="skill-icon"
+                                    src="./resources/images/SVG/latex-svgrepo-com.svg"
+                                    alt="LaTeX icon"
+                                />
+                                <div class="skill-separator"></div>
+                                <!-- TODO: positionner le svg latex de manière à ce qu'il soit aligné comme les autres skills -->
+                                <img
+                                    id="latex-skill-name"
+                                    src="./resources/images/SVG/latexname-svgrepo-com.svg"
+                                    alt="LaTeX name"
+                                />
+                                <!--
+                                
+                                    <h4 class="skill-name">LaTeX</h4>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator w90"></div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+            <div class="projects-container container">
+                <h1 class="section-title">mes projets</h1>
+                <div class="separator w90"></div>
+            </div>
+        </section>
     </body>
 </html>
