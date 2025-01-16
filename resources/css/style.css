@@ -62,6 +62,20 @@ section {
     background-color: var(--dark-secondary);
 }
 
+.img-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+}
+
+.img-icon img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .nav-links {
     height: 85%;
 }
@@ -107,13 +121,6 @@ section {
     aspect-ratio: 1 / 1;
 }
 
-.img-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #EEEEEE;
-}
-
 .nav-container-item {
     width: 100%;
 }
@@ -155,7 +162,8 @@ section {
 
 .main-title {
     color: var(--dark-title);
-    font-size: 5.5em;
+    font-size: max(5.7vw, 2em);
+    /* font-size: 5.5em; */
     font-weight: 1000;
 }
 
@@ -165,21 +173,23 @@ section {
 }
 
 .header-text .description {
-    font-size: 1.5em;
+    font-size: max(1.6vw, .6em);
     width: 120%;
     color: var(--dark-text);
 }
 
-.profile-img-container {
+.profile-img {
     top: 50%;
     right: 10%;
     transform: translateY(-50%);
-}
-
-.profile-img {
-    width: 350px;
     background-color: var(--dark-text);
     aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    max-width: 350px;
+    width: max(24vw, 200px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: fill;
     border-radius: 50%;
 }
 
@@ -261,11 +271,12 @@ section {
 .projects-presentation .description {
     width: 60%;
     color: var(--dark-text);
-    font-size: 1.5em;
+    font-size: max(1.6vw, .7em);
 }
 
 .projects {
-    height: 350px;
+    max-height: 350px;
+    height: max(30vw, 250px);
     width: 40%;
     gap: 10px;
 }
@@ -303,7 +314,7 @@ section {
 
 .project-box:hover {
     background-size: 100%;
-    background-color: rgba(41, 31, 67, 0);
+    background-color: rgba(41, 31, 67, .2);
     transition: background-size 8s ease, background-color .3s ease;
 }
 
@@ -316,7 +327,7 @@ section {
 }
 
 #project1 {
-    background-image: url('../images/project1.jpeg');
+    background-image: url('../images/project1_bis.jpeg');
 }
 
 #project2 {
@@ -334,7 +345,7 @@ section {
     border-radius: 20px;
     color: var(--dark-btn-text);
     font-family: Saira;
-    font-size: .9em;
+    font-size: max(0.93vw, .6em);
     /* z-index: -1; */
 }
 
@@ -345,3 +356,6 @@ section {
     right: 0%;
     text-decoration: none;
 }
+
+/* TODO: media query max-width à 800px*/
+/* TODO: media query max-width à 900px - bouton all-projects à modifier*/

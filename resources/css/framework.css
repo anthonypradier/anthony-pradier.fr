@@ -139,7 +139,7 @@
 
 .section-title {
     margin-top: 30px;
-    font-size: 3.5em;
+    font-size: max(3.6vw, 2em);
     font-family: Anek;
     text-transform: uppercase;
     color: var(--dark-title);
