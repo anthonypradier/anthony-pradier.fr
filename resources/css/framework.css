@@ -25,6 +25,10 @@
     src: url('../fonts/Anek_Gurmukhi/static/AnekGurmukhi-Regular.ttf');
 }
 
+.none {
+    display: none;
+}
+
 .relative {
     position: relative;
 }
