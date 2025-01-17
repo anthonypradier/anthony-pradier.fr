@@ -54,12 +54,17 @@ section {
 }
 
 .nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 80px;
     background-color: var(--dark-secondary);
+    z-index: 99;
 }
 
 .img-icon {
@@ -78,6 +83,13 @@ section {
 
 .nav-links {
     height: 85%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-item {
@@ -114,7 +126,7 @@ section {
 /* TODO: ce style est facultatif, si pour la responsivité cela pose problème, enlever */
 .nav-item a {
     display: block;
-    height: 40px;
+    height: max-content;
 }
 
 .img-icon-container {
@@ -126,6 +138,10 @@ section {
 }
 
 .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
 }
 
@@ -204,6 +220,12 @@ section {
 
 /* SKILL */
 
+.skills-box-container {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 4%;
+}
+
 .skills-box {
     display: flex;
     flex-direction: column;
@@ -211,6 +233,7 @@ section {
     align-items: center;
     gap: 10px;
     width: 22%;
+    min-width: 240px;
     height: 200px;
     border: solid 2px var(--dark-primary-border);
     border-radius: 4px;
@@ -264,8 +287,8 @@ section {
 }
 
 #latex-skill-name {
-    width: 100px;
-    height: 100px;
+    width: 5.5em;
+    /* height: 100px; */
 }
 
 /* PROJECTS */
@@ -363,11 +386,40 @@ section {
 /* TODO: media query max-width à 900px - bouton all-projects à modifier*/
 
 @media  screen and (max-width: 800px) {
-    .nav {
+    .container {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px; */
+        margin-left: 0;
+    }
+
+    .nav-container {
+        top: auto;
+        bottom: 0;
+        width: 100vw;
+        height: 60px;
+    }
+
+    .img-icon-container {
         display: none;
     }
-    
-    .header {
+
+    .nav {
+        position: absolute;
+        flex-direction: row;
+        /* justify-content: ; */
+        width: max(200px, 50%);
+        bottom: 0px;
+    }
+
+    .nav-item a {
+        /* height: 40px; */
+    }
+
+    .links {
+        display: none;
     }
     
     .header-container {
