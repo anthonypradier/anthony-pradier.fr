@@ -155,6 +155,7 @@ section {
 }
 
 .header-text {
+    position: absolute;
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
@@ -179,6 +180,7 @@ section {
 }
 
 .profile-img {
+    position: absolute;
     top: 50%;
     right: 10%;
     transform: translateY(-50%);
@@ -359,3 +361,36 @@ section {
 
 /* TODO: media query max-width à 800px*/
 /* TODO: media query max-width à 900px - bouton all-projects à modifier*/
+
+@media  screen and (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+    
+    .header {
+    }
+    
+    .header-container {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-text {
+        position:relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .profile-img {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: translate(0, 0);
+    }
+}
