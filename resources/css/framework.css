@@ -155,10 +155,11 @@
 }
 
 .boxed-icon {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    width: max-content;
     font-family: Open sans;
     padding: 5px;
     background-color: var(--dark-primary);
@@ -167,5 +168,5 @@
 }
 
 .boxed-icon img {
-    width: 20px;
+    height: 20px;
 }
