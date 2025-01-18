@@ -63,6 +63,7 @@ section {
     left: 0;
     height: 100vh;
     width: 80px;
+    border-right: solid 1px var(--dark-primary);
     background-color: var(--dark-secondary);
     z-index: 99;
 }
@@ -302,10 +303,24 @@ section {
 
 /* PROJECTS */
 
+.project-container {
+}
+
+.projects-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
 .projects-presentation .description {
     width: 60%;
     color: var(--dark-text);
     font-size: max(1.6vw, .7em);
+}
+
+#media800-projects-description {
+    display: none;
 }
 
 .projects {
@@ -391,17 +406,18 @@ section {
     text-decoration: none;
 }
 
-/* TODO: media query max-width à 800px*/
+.footer {
+    background-color: var(--dark-secondary);
+    position: static;
+    height: 100px;
+}
+
 /* TODO: media query max-width à 900px - bouton all-projects à modifier*/
 
 @media  screen and (max-width: 800px) {
     .container {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 30px; */
         margin-left: 0;
+        width: 100%;
     }
 
     .nav-container {
@@ -409,6 +425,8 @@ section {
         bottom: 0;
         width: 100vw;
         height: 60px;
+        border-right: none;
+        border-top: solid 3px var(--dark-primary);
     }
 
     .img-icon-container {
@@ -475,5 +493,50 @@ section {
         width: 40vw;
         min-width: 240px;
         transform: translate(0, 0);
+    }
+
+    .projects-presentation {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .projects-presentation .description {
+        width: 100%;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    #projects-description {
+        display: none;
+    }
+
+    #media800-projects-description {
+        display: block;
+    }
+
+    .projects {
+        align-items: center;
+        height: 450px;
+        width: max(50%, 320px);
+    }
+
+    .projects a:nth-child(2) {
+        transform: translateX(0);
+    }
+    
+    .projects a:nth-child(3) {
+        transform: translateX(0);
+    }
+
+    .all-projects-a {
+        margin-top: 10px;
+        position: static;
+        width: max-content;
+        right: none;
+    }
+
+    .footer {
+        height: 140px;
     }
 }
