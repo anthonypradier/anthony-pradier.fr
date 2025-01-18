@@ -177,6 +177,11 @@ section {
     transform: translateY(-50%);
 }
 
+.header-text .separator {
+    width: 70%;
+    margin: 30px 0;
+}
+
 .main-title {
     color: var(--dark-title);
     font-size: max(5.7vw, 2em);
@@ -191,8 +196,12 @@ section {
 
 .header-text .description {
     font-size: max(1.6vw, .6em);
-    width: 120%;
+    width: 110%;
     color: var(--dark-text);
+}
+
+#media800-description {
+    display: none;
 }
 
 .profile-img {
@@ -433,16 +442,38 @@ section {
     }
 
     .header-text {
-        position:relative;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         top: 0;
         left: 0;
         transform: translate(0, 0);
+        text-align: center;
+    }
+
+    .header-text .separator {
+        width: 100%;
+    }
+
+    .header-text .description {
+        display: none;
+    }
+
+    #media800-description {
+        display: block;
+        width: 100%;
+        font-size: max(1.19vw, 1em);
+        line-height: 1.8em;
+        text-align: center;
     }
 
     .profile-img {
         position: relative;
         top: 0;
         right: 0;
+        width: 40vw;
+        min-width: 240px;
         transform: translate(0, 0);
     }
 }
