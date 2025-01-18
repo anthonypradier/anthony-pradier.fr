@@ -171,6 +171,12 @@
     transition: all .2s ease;
 }
 
+.footer-links svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--dark-social-icon);
+}
+
 @media  screen and (max-width: 800px) {
     .nav-item svg {
         width: 30px;

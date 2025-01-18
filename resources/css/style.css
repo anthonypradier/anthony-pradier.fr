@@ -413,8 +413,32 @@ section {
 }
 
 .footer-container {
-    height: 100%;
-    /* width: ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin-left: 80px;
+    font-size: .9em;
+    color: var(--dark-text);
+}
+
+.web-languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-separator {
+    fill: var(--dark-social-icon);
+}
+
+.lang-separator {
+    fill: var(--dark-primary-separator);
+}
+
+.footer-links {
+    display: none;
 }
 
 /* TODO: media query max-width à 900px - bouton all-projects à modifier*/
@@ -455,7 +479,7 @@ section {
     }
 
     .header {
-        height: calc(100vh - 60px);
+        height: calc(100vh - 60px); /* pour faire en sorte que le header se termine au niveau de la nav en bas */
     }
     
     .header-container {
@@ -546,6 +570,26 @@ section {
     }
 
     .footer {
-        height: 140px;
+        height: 200px;
+    }
+
+    .footer-container {
+        height: calc(100% - 60px);
+        margin-left: 0;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 80%;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 2px 0;
+        max-height: 20px;
     }
 }

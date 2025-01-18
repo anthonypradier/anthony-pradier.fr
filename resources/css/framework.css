@@ -25,6 +25,11 @@
     src: url('../fonts/Anek_Gurmukhi/static/AnekGurmukhi-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Open sans';
+    src: url('../fonts/Open_sans/static/OpenSans-Regular.ttf');
+}
+
 .none {
     display: none;
 }
@@ -147,4 +152,20 @@
 
 .text {
     font-family: Saira;
+}
+
+.boxed-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: Open sans;
+    padding: 5px;
+    background-color: var(--dark-primary);
+    border: solid 1px var(--dark-tertiary);
+    border-radius: 3px;
+}
+
+.boxed-icon img {
+    width: 20px;
 }
