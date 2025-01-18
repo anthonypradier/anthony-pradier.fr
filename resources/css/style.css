@@ -352,7 +352,7 @@ section {
     height: 100%;
     border-radius: 4px;
     border: solid 2px var(--dark-secondary-border);
-    background-color: rgba(41, 31, 67, .8); /*#291F43 tertiary*/
+    background-color: rgba(41, 31, 67, .4); /*#291F43 tertiary*/
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
