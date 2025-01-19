@@ -51,18 +51,48 @@ body {
 }
 
 header {
+    position: relative;
     height: 250px;
     width: 80vw;
     background-color: var(--dark-primary);
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    bottom: -20%;
+    filter: sepia(10%) hue-rotate(120deg);
 }
 
 .content {
     position: relative;
     display: flex;
     justify-content: center;
-    /* align-items: baseline; */
     width: 80vw;
-    /* height: 500px; */
+}
+
+.content::before, .content::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    /* aspect-ratio: 1 / 1; */
+    border: solid 1px var(--dark-primary-border);
+}
+
+.content::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.content::after {
+    right: 0;
+    bottom: 0;
+    border-top: none;
+    border-left: none;
 }
 
 .left-separator {
@@ -87,6 +117,29 @@ header {
     justify-content: baseline;
     align-items: center;
     width: 80%;
+    margin: 50px 0;
+}
+
+.back {
+    position: absolute;
+    left: 2.5%;
+    top: 20px;
+}
+
+.back svg {
+    fill: var(--dark-nav-icon);
+    width: 40px;
+    height: 40px;
+    transition: all .2s ease;
+}
+
+.back:hover {
+}
+
+.back:hover svg {
+    fill: var(--dark-title);
+    transform: translateX(-20px);
+    transition: all .2s ease;
 }
 
 .project-name {
@@ -114,7 +167,7 @@ header {
 
 .project-content .separator {
     width: 50%;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 
