@@ -161,6 +161,7 @@
     gap: 8px;
     width: max-content;
     font-family: Open sans;
+    font-size: .8em;
     padding: 5px;
     background-color: var(--dark-primary);
     border: solid 1px var(--dark-tertiary);
@@ -168,5 +169,5 @@
 }
 
 .boxed-icon img {
-    height: 20px;
+    height: 15px;
 }
