@@ -160,6 +160,7 @@
     align-items: center;
     gap: 8px;
     width: max-content;
+    height: max-content;
     font-family: Open sans;
     font-size: .8em;
     padding: 5px;

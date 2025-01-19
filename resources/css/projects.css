@@ -46,7 +46,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background-color: var(--dark-secondary);
+    background-color: var(--dark-primary);
     color: var(--dark-text);
 }
 
@@ -62,7 +62,7 @@ header {
     position: absolute;
     width: 100%;
     bottom: -20%;
-    filter: sepia(10%) hue-rotate(120deg);
+    filter:  opacity(.3);
 }
 
 .content {
@@ -151,14 +151,15 @@ header {
 .project-description {
     text-align: center;
     font-size: 1.2em;
-    line-height: 2em;
+    line-height: 1.5em;
     vertical-align: middle;
 }
 
 .project-description span  {
-    font-size: .85em;
-    height: max-content;
+    font-size: .75em;
+    /* height: max-content; */
     padding: 0 4px;
+    background-color: var(--dark-secondary);
 }
 
 .project-description span img  {
