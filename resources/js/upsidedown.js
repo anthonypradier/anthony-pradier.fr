@@ -2,7 +2,7 @@ const idle = document.getElementById('idle');
 
 const spriteSize = 192;
 let idle_position = 192; // x pos of the sprite sheet
-let run_position
+let run_position;
 const interval = 100 // ms
 
 const idleAnim = () => {

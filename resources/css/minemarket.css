@@ -1,3 +1,9 @@
 .logo {
-    width: 50%;
+    width: clamp(320px, 70%, 800px);
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        width: 100%;
+    }
 }
