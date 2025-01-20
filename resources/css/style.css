@@ -51,6 +51,7 @@ section {
     align-items: center;
     gap: 30px;
     margin-left: 80px;
+    max-width: 1400px;
 }
 
 .nav-container {
@@ -119,7 +120,6 @@ section {
 }
 
 .nav-item:hover::after {
-    /* transform-origin: left; */
     transform: translatex(-50%) scale(4, 1);
     transition: all .2s ease-out;
 }
@@ -169,6 +169,7 @@ section {
 .header-container {
     height: 100%;
     margin-left: 80px;
+    max-width: 1400px;
 }
 
 .header-text {
@@ -185,7 +186,7 @@ section {
 
 .main-title {
     color: var(--dark-title);
-    font-size: max(5.7vw, 2em);
+    font-size: clamp(3em, 5.7vw, 6.5em);
     /* font-size: 5.5em; */
     font-weight: 1000;
 }
@@ -196,7 +197,7 @@ section {
 }
 
 .header-text .description {
-    font-size: max(1.6vw, .6em);
+    font-size: clamp(.6em, 1.6vw, 2.3em);
     width: 110%;
     color: var(--dark-text);
 }
@@ -316,7 +317,7 @@ section {
 .projects-presentation .description {
     width: 60%;
     color: var(--dark-text);
-    font-size: max(1.6vw, .7em);
+    font-size: max(1.6vw, .9em);
 }
 
 #media800-projects-description {

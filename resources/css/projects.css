@@ -52,8 +52,8 @@ body {
 
 header {
     position: relative;
-    height: 250px;
-    width: clamp(600px, 80vw, 1400px);
+    height: 30vw;
+    width: min(80vw, 1400px);
     background-color: var(--dark-primary);
     overflow: hidden;
 }
@@ -253,6 +253,10 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+
+    header {
+        width: 100%;
+    }
 
     .content-part:nth-child(2n+1) {
         flex-direction: column;
