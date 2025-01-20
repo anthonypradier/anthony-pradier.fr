@@ -52,7 +52,7 @@ body {
 
 header {
     position: relative;
-    height: 30vw;
+    height: clamp(100px, 15vw, 600px);
     width: min(80vw, 1400px);
     background-color: var(--dark-primary);
     overflow: hidden;
