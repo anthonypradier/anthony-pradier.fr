@@ -154,6 +154,11 @@
     font-family: Saira;
 }
 
+
+.text-center {
+    text-align: center;
+}
+
 .boxed-icon {
     display: inline-flex;
     justify-content: center;

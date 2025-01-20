@@ -1,0 +1,18 @@
+.anim-container {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
+
+.anim {
+    width: 192px;
+    height: 192px;
+}
+
+#idle {
+    background: url('../images/MC-Sheet-portfolio-idle.png') 0px 0px;
+}
+
+#run {
+    background: url('../images/MC-Sheet-portfolio-run.png') 0px 0px;
+}

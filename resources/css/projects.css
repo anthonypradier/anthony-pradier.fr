@@ -62,7 +62,7 @@ header {
     position: absolute;
     width: 100%;
     bottom: -20%;
-    filter:  opacity(.3);
+    filter:  opacity(.6);
 }
 
 .content {
@@ -93,22 +93,6 @@ header {
     bottom: 0;
     border-top: none;
     border-left: none;
-}
-
-.left-separator {
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    left: 0;
-    background-color: var(--dark-primary-separator);
-}
-
-.right-separator {
-    position: absolute;
-    right: 0;
-    width: 1px;
-    height: 100%;
-    background-color: var(--dark-primary-separator);
 }
 
 .project-content {
@@ -200,12 +184,6 @@ header {
     text-align: justify;
 }
 
-.video {
-    width: 45%;
-    aspect-ratio: 3 / 2;
-    background-color: #3C2E69;
-}
-
 .content-part video {
     width: 45%;
     height: 100%;
@@ -218,11 +196,6 @@ header {
 .conclusion {
     text-align: center;
 }
-
-.demonstration {
-    width: 70%;
-}
-
 
 
 /* FOOTER */
