@@ -512,97 +512,118 @@
                 <h1 class="title section-title">me contacter</h1>
 
                 <!---->
-                <div class="form-container borderr">
-                    <form
-                        action=""
-                        id="contact-form"
-                        class="flex-center flex-column"
-                    >
-                        <div class="form-item" data-placeholder="NOM & PRÉNOM*">
-                            <input
-                                type="text"
-                                name="name"
-                                id="user-name"
-                                placeholder=" "
-                                required
-                            />
-                        </div>
-
-                        <div
-                            class="form-item"
-                            data-placeholder="ADRESSE E-MAIL*"
-                        >
-                            <input
-                                type="email"
-                                name="email"
-                                id="user-email"
-                                placeholder=" "
-                            />
-                        </div>
-
-                        <div
-                            class="form-item"
-                            data-placeholder="NUMÉRO DE TÉLÉPHONE"
-                        >
-                            <input
-                                type="number"
-                                name="number"
-                                id="user_number"
-                                onKeyPress="if(this.value.length==10) return false;"
-                                placeholder=" "
-                            />
-                        </div>
-
-                        <div class="form-item" data-placeholder="ENTREPRISE">
-                            <input
-                                type="number"
-                                name="number"
-                                placeholder=" "
-                            />
-                        </div>
-
-                        <div class="form-item" data-placeholder="SUJET*">
-                            <input
-                                type="text"
-                                name="subject"
-                                id="subject"
-                                placeholder=" "
-                                required
-                            />
-                        </div>
-
-                        <div
-                            class="form-item"
-                            data-placeholder="ÉCRIVEZ VOTRE MESSAGE*"
-                        >
-                            <textarea
-                                name="message"
-                                id="message"
-                                placeholder=" "
-                                required
-                            ></textarea>
-                        </div>
-
-                        <!--
-                            <div class="form-item">
-                                <label for="cgu"
-                                    >J'accepte que les données entées soient
-                                    utilisées pour l'envoi d'un mail à des fins
-                                    personnelles<span class="form-require"
-                                        >*</span
-                                    ></label
-                                >
+                <div class="form-container">
+                    <form action="" id="contact-form" class="">
+                        <div class="inputs flex-center flex-column">
+                            <!--
+                                <div class="form-item">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="user-name"
+                                        class="contact-input"
+                                        autocomplete="off"
+                                        required
+                                    />
+                                    <div class="contact-label">
+                                        nom & prénom<span class="form-require"
+                                            >*</span
+                                        >
+                                    </div>
+                                </div>
+                            -->
+                            <label class="input">
                                 <input
-                                    type="checkbox"
-                                    name="cgu"
-                                    id="cgu"
+                                    class="input-field"
+                                    type="text"
+                                    placeholder=" "
+                                />
+                                <span class="input-label"
+                                    >nom & prénom<span class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
+
+                            <div class="form-item">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="user-email"
+                                    class="contact-input"
+                                    autocomplete="off"
+                                    required
+                                />
+                                <div class="contact-label">
+                                    adresse e-mail<span class="form-require"
+                                        >*</span
+                                    >
+                                </div>
+                            </div>
+
+                            <!--
+                            
+                                <div class="form-item">
+                                    <input
+                                        type="number"
+                                        name="number"
+                                        id="user_number"
+                                        class="contact-input"
+                                        onKeyPress="if(this.value.length==10) return false;"
+                                        autocomplete="off"
+                                    />
+                                    <div class="contact-label">
+                                        numéro de téléphone
+                                    </div>
+                                </div>
+                            -->
+
+                            <div class="form-item">
+                                <input
+                                    type="text"
+                                    name="company"
+                                    id="company"
+                                    class="contact-input"
+                                    autocomplete="off"
+                                />
+                                <div class="contact-label">entreprise</div>
+                            </div>
+
+                            <div class="form-item">
+                                <div class="contact-label">
+                                    sujet<span class="form-require">*</span>
+                                </div>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    id="subject"
+                                    class="contact-input"
+                                    autocomplete="off"
                                     required
                                 />
                             </div>
-                        -->
+
+                            <div class="form-item">
+                                <div class="contact-label">
+                                    écrivez votre message
+                                </div>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    class="contact-input"
+                                    placeholder=" "
+                                    autocomplete="off"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
 
                         <div class="form-item">
-                            <input type="submit" value="Envoyer" />
+                            <input
+                                id="send-form"
+                                type="submit"
+                                value="Envoyer"
+                            />
                         </div>
                     </form>
                 </div>
