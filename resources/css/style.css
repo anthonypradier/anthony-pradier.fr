@@ -186,8 +186,7 @@ section {
 
 .main-title {
     color: var(--dark-title);
-    font-size: clamp(3em, 5.7vw, 6.5em);
-    /* font-size: 5.5em; */
+    font-size: clamp(2.7em, 5.7vw, 6.5em);
     font-weight: 1000;
 }
 
