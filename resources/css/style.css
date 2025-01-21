@@ -407,6 +407,53 @@ section {
     text-decoration: none;
 }
 
+/* CONTACT */
+
+.contact-container {
+    height: 100vh;
+}
+
+.form-container {
+    width: 20%;
+}
+
+.form-item {
+    position: relative;
+    width: 100%;
+}
+
+#contact-form {
+    gap: 20px;
+    font-family: Saira;
+    color: var(--dark-text);
+}
+
+.form-item::before {
+    content: attr(data-placeholder);
+    position:absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--dark-social-icon);
+    font-family: Saira;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px var(--dark-social-icon);
+    color: var(--dark-social-icon);
+}
+
+#contact-form input::placeholder, #message::placeholder {
+    font-family: Saira;
+    color: var(--dark-social-icon);
+}
+
+/* FOOTER */
+
 .footer {
     background-color: var(--dark-secondary);
     position: static;

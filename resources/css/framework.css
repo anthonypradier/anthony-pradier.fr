@@ -177,3 +177,7 @@
 .boxed-icon img {
     height: 15px;
 }
+
+.form-require {
+    color: var(--dark-title);
+}

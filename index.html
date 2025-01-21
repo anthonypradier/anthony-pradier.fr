@@ -12,6 +12,14 @@
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
         ></script>
+        <script type="text/javascript" defer>
+            (function () {
+                emailjs.init({
+                    publicKey: "PlqPTtXjFQo2XXWkn",
+                });
+            })();
+        </script>
+        <script src="./resources/js/mail.js" defer></script>
         <script
             type="text/javascript"
             src="./resources/js/index.js"
@@ -130,7 +138,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="nav-item none" id="nav-contact">
+                <div class="nav-item" id="nav-contact">
                     <!-- Contact me -->
                     <a href="#contact">
                         <svg
@@ -503,7 +511,101 @@
             <div class="contact-container container">
                 <h1 class="title section-title">me contacter</h1>
 
-                <h2 class="form-title">Contact Form</h2>
+                <!---->
+                <div class="form-container borderr">
+                    <form
+                        action=""
+                        id="contact-form"
+                        class="flex-center flex-column"
+                    >
+                        <div class="form-item" data-placeholder="NOM & PRÉNOM*">
+                            <input
+                                type="text"
+                                name="name"
+                                id="user-name"
+                                placeholder=" "
+                                required
+                            />
+                        </div>
+
+                        <div
+                            class="form-item"
+                            data-placeholder="ADRESSE E-MAIL*"
+                        >
+                            <input
+                                type="email"
+                                name="email"
+                                id="user-email"
+                                placeholder=" "
+                            />
+                        </div>
+
+                        <div
+                            class="form-item"
+                            data-placeholder="NUMÉRO DE TÉLÉPHONE"
+                        >
+                            <input
+                                type="number"
+                                name="number"
+                                id="user_number"
+                                onKeyPress="if(this.value.length==10) return false;"
+                                placeholder=" "
+                            />
+                        </div>
+
+                        <div class="form-item" data-placeholder="ENTREPRISE">
+                            <input
+                                type="number"
+                                name="number"
+                                placeholder=" "
+                            />
+                        </div>
+
+                        <div class="form-item" data-placeholder="SUJET*">
+                            <input
+                                type="text"
+                                name="subject"
+                                id="subject"
+                                placeholder=" "
+                                required
+                            />
+                        </div>
+
+                        <div
+                            class="form-item"
+                            data-placeholder="ÉCRIVEZ VOTRE MESSAGE*"
+                        >
+                            <textarea
+                                name="message"
+                                id="message"
+                                placeholder=" "
+                                required
+                            ></textarea>
+                        </div>
+
+                        <!--
+                            <div class="form-item">
+                                <label for="cgu"
+                                    >J'accepte que les données entées soient
+                                    utilisées pour l'envoi d'un mail à des fins
+                                    personnelles<span class="form-require"
+                                        >*</span
+                                    ></label
+                                >
+                                <input
+                                    type="checkbox"
+                                    name="cgu"
+                                    id="cgu"
+                                    required
+                                />
+                            </div>
+                        -->
+
+                        <div class="form-item">
+                            <input type="submit" value="Envoyer" />
+                        </div>
+                    </form>
+                </div>
                 <div class="separator w90"></div>
             </div>
         </section>
