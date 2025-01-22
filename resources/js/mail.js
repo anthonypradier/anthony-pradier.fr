@@ -1,6 +1,5 @@
 const btn_send = document.getElementById('send-form');
 const contact_form = document.getElementById('contact-form');
-// console.log(contact_form);
 
 contact_form.addEventListener('submit', function(e) {
     e.preventDefault();
