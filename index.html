@@ -12,7 +12,18 @@
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
         ></script>
+<<<<<<< HEAD
 
+=======
+        <script type="text/javascript" defer>
+            (function () {
+                emailjs.init({
+                    publicKey: "PlqPTtXjFQo2XXWkn",
+                });
+            })();
+        </script>
+        <script type="module" src="./resources/js/mail.js" defer></script>
+>>>>>>> contact
         <script
             type="text/javascript"
             src="./resources/js/index.js"
@@ -131,7 +142,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="nav-item none" id="nav-contact">
+                <div class="nav-item" id="nav-contact">
                     <!-- Contact me -->
                     <a href="#contact">
                         <svg
@@ -499,17 +510,178 @@
             </div>
         </section>
 
-        <!-- CONTACT 
-        
-            <section id="contact">
-                <div class="contact-container container">
-                    <h1 class="title section-title">me contacter</h1>
-    
-                    <h2 class="form-title">Contact Form</h2>
-                    <div class="separator w90"></div>
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="contact-container">
+                <h1 class="title section-title">contactez moi</h1>
+
+                <!---->
+                <div class="form-container">
+                    <form action="" id="contact-form" class="">
+                        <div class="inputs flex-center flex-column">
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="text"
+                                    id="user-name"
+                                    placeholder=" "
+                                />
+                                <span class="input-label"
+                                    >nom & prénom<span class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
+
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="email"
+                                    id="user-email"
+                                    placeholder=" "
+                                />
+                                <span class="input-label"
+                                    >adresse e-mail<span class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
+
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="number"
+                                    id="user-number"
+                                    placeholder=" "
+                                />
+                                <span class="input-label"
+                                    >numéro de telephone</span
+                                >
+                            </label>
+
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="text"
+                                    id="user-company"
+                                    placeholder=" "
+                                />
+                                <span class="input-label">entreprise</span>
+                            </label>
+
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="text"
+                                    id="subject"
+                                    placeholder=" "
+                                />
+                                <span class="input-label"
+                                    >sujet<span class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
+
+                            <label class="input">
+                                <textarea
+                                    class="input-field"
+                                    type="text"
+                                    id="message"
+                                    placeholder=" "
+                                ></textarea>
+                                <span class="input-label"
+                                    >écrivez votre message<span
+                                        class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
+                        </div>
+
+                        <h3 class="text">
+                            comment avez-vous entendu parler de moi ?
+                        </h3>
+
+                        <div class="form-btns">
+                            <div class="form-btn">
+                                <input
+                                    id="btn-instagram"
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="btn-instagram"
+                                    value="Instagram"
+                                />
+                                <label
+                                    class="btn-label-box"
+                                    for="btn-instagram"
+                                >
+                                    <div class="btn-label">Instagram</div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    id="btn-x"
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="btn-X"
+                                    value="X/twitter"
+                                />
+                                <label class="btn-label-box" for="btn-x">
+                                    <div class="btn-label">X</div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    id="btn-linkedin"
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="btn-linkedin"
+                                    value="LinkedIn"
+                                />
+                                <label class="btn-label-box" for="btn-linkedin">
+                                    <div class="btn-label">LinkedIn</div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    id="btn-wom"
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="btn-wom"
+                                    value="Bouche à oreille"
+                                />
+                                <!-- wom = word of mouth = bouche à oreille -->
+                                <label class="btn-label-box" for="btn-wom">
+                                    <div class="btn-label">
+                                        Bouche à oreille
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    id="btn-other"
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="btn-other"
+                                    value="Autre"
+                                />
+                                <label class="btn-label-box" for="btn-other">
+                                    <div class="btn-label">Autre</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-separator separator w90"></div>
+                        <input
+                            class="custom-fill-btn custom-btn"
+                            id="send-form"
+                            type="submit"
+                            value="Envoyer"
+                        />
+                    </form>
                 </div>
-            </section>
-        -->
+            </div>
+        </section>
 
         <!-- FOOTER -->
         <footer class="footer">

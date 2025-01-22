@@ -177,3 +177,16 @@
 .boxed-icon img {
     height: 15px;
 }
+
+.form-require {
+    color: var(--dark-title);
+}
+
+/* .custom-btn {
+    width: max-content;
+    min-width: 80px;
+    height: max-content;
+    padding: 5px;
+    border: solid 1px var(--dark-subtitle);
+    border-radius: 1em;
+} */

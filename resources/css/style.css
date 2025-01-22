@@ -303,8 +303,7 @@ section {
 
 /* PROJECTS */
 
-.project-container {
-}
+.project-container {}
 
 .projects-presentation {
     display: flex;
@@ -330,7 +329,8 @@ section {
     gap: 10px;
 }
 
-.projects a:nth-child(n+1):nth-child(-n+3) { /*  sélectionner du premier enfant jusqu'au 3e*/
+.projects a:nth-child(n+1):nth-child(-n+3) {
+    /*  sélectionner du premier enfant jusqu'au 3e*/
     display: block;
     width: 100%;
     height: 30%;
@@ -352,7 +352,8 @@ section {
     height: 100%;
     border-radius: 4px;
     border: solid 2px var(--dark-secondary-border);
-    background-color: rgba(41, 31, 67, .4); /*#291F43 tertiary*/
+    background-color: rgba(41, 31, 67, .4);
+    /*#291F43 tertiary*/
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
@@ -372,8 +373,7 @@ section {
     /* font-family: Saira; */
 }
 
-.project-bg {
-}
+.project-bg {}
 
 #project1 {
     background-image: url('../images/project1.jpeg');
@@ -406,6 +406,208 @@ section {
     text-decoration: none;
 }
 
+/* CONTACT */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 80px;
+    max-width: 1400px;
+    height: 100vh;
+}
+
+.form-container {
+    width: max(350px, 30%);
+}
+
+.form-item {
+    position: relative;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: Saira;
+    color: var(--dark-text);
+}
+
+.inputs {
+    width: 100%;
+    gap: 30px;
+}
+
+.input {
+    position: relative;
+}
+
+.input::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105%;
+    height: 1px;
+    background-color: var(--dark-social-icon);
+}
+
+.input-label {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    /* transform: translateY(-50%); */
+    background: var(--color-background);
+    transition: transform .5s ease-out;
+    /* line-height: 1; */
+    font-size: 1em;
+    pointer-events: none;
+    color: var(--dark-social-icon);
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    height: 2em;
+    font-size: 1.1em;
+    border: none;
+    color: var(--dark-text);
+    background: transparent;
+    outline: none;
+}
+
+.input-field:focus+.input-label,
+.input-field:not(:placeholder-shown)+.input-label {
+    transform: translateY(-100%);
+
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    /* not use this method */
+    -webkit-appearance: none; 
+}
+
+#message {
+    height: 5em;
+    font-family: Saira;
+    font-size: 1em;
+    resize: none;
+}
+
+#message::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--dark-secondary);
+    border-radius: 3px;
+}
+
+#message::-webkit-scrollbar-thumb {
+    background-color: var(--dark-social-icon);
+    border-radius: 3px;
+}
+
+#message .input-label {
+    top: 0;
+}
+
+#contact-form h3 {
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: normal;
+    color: var(--dark-social-icon);
+}
+
+/* TODO: make the line scale on focus - create a specific div */
+/* .input-field:focus-within::after {
+    width: 120%;
+} */
+
+.form-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.form-btn {
+    position: relative;
+    width: max-content;
+    min-width: 80px;
+    height: 2em;
+}
+
+.btn-input {
+    display: none;
+}
+
+.btn-label-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    min-width: 80px;
+    height: 100%;
+    cursor: pointer;
+    border: solid 2px var(--dark-social-icon);
+    border-radius: 1em;
+    text-align: center;
+    font-size: .9em;
+    padding: 10px 3px;
+    transition: all .2s ease;
+}
+
+.btn-label {
+    width: max-content;
+    text-wrap: nowrap;
+    color: var(--dark-social-icon);
+    transition: all .2s ease;
+}
+
+.form-btn:hover .btn-label {
+    color: var(--dark-title);
+}
+
+.form-btn:hover .btn-label-box {
+    color: var(--dark-title);
+    border: solid 2px var(--dark-title);
+}
+
+.btn-input:checked + .btn-label-box .btn-label {
+    color: var(--dark-title);
+}
+
+.btn-input:checked + .btn-label-box {
+    border: solid 2px var(--dark-title);
+}
+
+#send-form {
+    font-family: Saira;
+    cursor: pointer;
+    width: 100px;
+    height: 2.5em;
+    border: solid 2px transparent; /* to have a clean transition for the border */
+    border-radius: 1.2em;
+    font-size: 1.1em;
+    background-color: var(--dark-nav-icon);
+    transition: all .2s ease-out;
+}
+
+#send-form:hover {
+    color: var(--dark-text);
+    background-color: transparent;
+    border: solid 1px var(--dark-subtitle);
+    transition: all .2s ease-out;
+}
+
+
+/* FOOTER */
+
 .footer {
     background-color: var(--dark-secondary);
     position: static;
@@ -417,7 +619,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%; 
+    height: 100%;
     margin-left: 80px;
     font-size: .9em;
     color: var(--dark-text);
@@ -443,8 +645,8 @@ section {
 
 /* TODO: media query max-width à 900px - bouton all-projects à modifier*/
 
-@media  screen and (max-width: 800px) {
-    .container {
+@media screen and (max-width: 800px) {
+    .container, .contact-container {
         margin-left: 0;
         width: 100%;
     }
@@ -479,9 +681,10 @@ section {
     }
 
     .header {
-        height: calc(100vh - 60px); /* pour faire en sorte que le header se termine au niveau de la nav en bas */
+        height: calc(100vh - 60px);
+        /* pour faire en sorte que le header se termine au niveau de la nav en bas */
     }
-    
+
     .header-container {
         margin: 0 auto;
         width: 90%;
@@ -557,7 +760,7 @@ section {
     .projects a:nth-child(2) {
         transform: translateX(0);
     }
-    
+
     .projects a:nth-child(3) {
         transform: translateX(0);
     }
