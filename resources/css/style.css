@@ -303,8 +303,7 @@ section {
 
 /* PROJECTS */
 
-.project-container {
-}
+.project-container {}
 
 .projects-presentation {
     display: flex;
@@ -330,7 +329,8 @@ section {
     gap: 10px;
 }
 
-.projects a:nth-child(n+1):nth-child(-n+3) { /*  sélectionner du premier enfant jusqu'au 3e*/
+.projects a:nth-child(n+1):nth-child(-n+3) {
+    /*  sélectionner du premier enfant jusqu'au 3e*/
     display: block;
     width: 100%;
     height: 30%;
@@ -352,7 +352,8 @@ section {
     height: 100%;
     border-radius: 4px;
     border: solid 2px var(--dark-secondary-border);
-    background-color: rgba(41, 31, 67, .4); /*#291F43 tertiary*/
+    background-color: rgba(41, 31, 67, .4);
+    /*#291F43 tertiary*/
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
@@ -372,8 +373,7 @@ section {
     /* font-family: Saira; */
 }
 
-.project-bg {
-}
+.project-bg {}
 
 #project1 {
     background-image: url('../images/project1.jpeg');
@@ -423,7 +423,7 @@ section {
 }
 
 .form-container {
-    width: 30%;
+    width: max(350px, 30%);
 }
 
 .form-item {
@@ -435,7 +435,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     font-family: Saira;
     color: var(--dark-text);
 }
@@ -486,14 +486,33 @@ section {
     outline: none;
 }
 
-.input-field:focus + .input-label , .input-field:not(:placeholder-shown) + .input-label  {
-        transform: translateY(-100%);
-    
+.input-field:focus+.input-label,
+.input-field:not(:placeholder-shown)+.input-label {
+    transform: translateY(-100%);
+
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    /* not use this method */
+    -webkit-appearance: none; 
 }
 
 #message {
     height: 5em;
     font-family: Saira;
+    font-size: 1em;
+    resize: none;
+}
+
+#message::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--dark-secondary);
+    border-radius: 3px;
+}
+
+#message::-webkit-scrollbar-thumb {
+    background-color: var(--dark-social-icon);
+    border-radius: 3px;
 }
 
 #message .input-label {
@@ -509,30 +528,26 @@ section {
 
 .form-btns {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
 }
 
 .form-btn {
     position: relative;
-    width:max-content;
+    width: max-content;
     min-width: 80px;
     height: 2em;
 }
 
-.form-btn input {
+.btn-input {
     display: none;
 }
 
-.form-btn label {
-    position: absolute;
+.btn-label-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 0;
-    top: 0;
-    /* width: max(max-content, 100%); */
     width: max-content;
     min-width: 80px;
     height: 100%;
@@ -541,7 +556,7 @@ section {
     border-radius: 1em;
     text-align: center;
     font-size: .9em;
-    padding: 3px;
+    padding: 10px 3px;
     transition: all .2s ease;
 }
 
@@ -552,7 +567,7 @@ section {
     transition: all .2s ease;
 }
 
-.btn-input:hover + .btn-label {
+.form-btn:hover .btn-label {
     color: var(--dark-title);
 }
 
@@ -561,11 +576,11 @@ section {
     border: solid 2px var(--dark-title);
 }
 
-.btn-input:checked + .btn-label {
+.btn-input:checked + .btn-label-box .btn-label {
     color: var(--dark-title);
 }
 
-.btn-input:checked  + .btn-label-box {
+.btn-input:checked + .btn-label-box {
     border: solid 2px var(--dark-title);
 }
 
@@ -574,8 +589,18 @@ section {
     cursor: pointer;
     width: 100px;
     height: 2.5em;
+    border: solid 2px transparent; /* to have a clean transition for the border */
     border-radius: 1.2em;
     font-size: 1.1em;
+    background-color: var(--dark-nav-icon);
+    transition: all .2s ease-out;
+}
+
+#send-form:hover {
+    color: var(--dark-text);
+    background-color: transparent;
+    border: solid 1px var(--dark-subtitle);
+    transition: all .2s ease-out;
 }
 
 
@@ -592,7 +617,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%; 
+    height: 100%;
     margin-left: 80px;
     font-size: .9em;
     color: var(--dark-text);
@@ -618,8 +643,8 @@ section {
 
 /* TODO: media query max-width à 900px - bouton all-projects à modifier*/
 
-@media  screen and (max-width: 800px) {
-    .container {
+@media screen and (max-width: 800px) {
+    .container, .contact-container {
         margin-left: 0;
         width: 100%;
     }
@@ -654,9 +679,10 @@ section {
     }
 
     .header {
-        height: calc(100vh - 60px); /* pour faire en sorte que le header se termine au niveau de la nav en bas */
+        height: calc(100vh - 60px);
+        /* pour faire en sorte que le header se termine au niveau de la nav en bas */
     }
-    
+
     .header-container {
         margin: 0 auto;
         width: 90%;
@@ -732,7 +758,7 @@ section {
     .projects a:nth-child(2) {
         transform: translateX(0);
     }
-    
+
     .projects a:nth-child(3) {
         transform: translateX(0);
     }
