@@ -408,45 +408,36 @@ section {
 
 /* CONTACT */
 
-/* 
-.input {
-  position: relative;
-  
-  &__label {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
-    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
-    background: pink;
-    white-space: nowrap;
-    transform: translate(0, 0);
-    transform-origin: 0 0;
-    background: var(--color-background);
-    transition: transform 120ms ease-in;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  &__field {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border: 3px solid currentColor;
-    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
-    color: currentColor;
-    background: transparent;
-    border-radius: var(--size-radius);
-    
-    &:focus,
-    &:not(:placeholder-shown) {
-      & + .input__label {
-        transform: translate(.25rem, -65%) scale(.8);
-        color: var(--color-accent);
-      }
-    }
-  }
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: 80px;
+    min-width: 1400px;
 }
-*/
+
+
+.contact-container {
+    height: 100vh;
+}
+
+.form-container {
+    width: 20%;
+}
+
+.form-item {
+    position: relative;
+}
+
+#contact-form {
+    font-family: Saira;
+    color: var(--dark-text);
+}
+
+.inputs {
+    gap: 30px;
+}
 
 .input {
     position: relative;
@@ -465,11 +456,11 @@ section {
 
 .input-label {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 0;
     white-space: nowrap;
     text-transform: uppercase;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     background: var(--color-background);
     transition: transform .5s ease-out;
     /* line-height: 1; */
@@ -490,69 +481,17 @@ section {
 }
 
 .input-field:focus + .input-label , .input-field:not(:placeholder-shown) + .input-label  {
-        transform: translateY(-140%);
+        transform: translateY(-100%);
     
 }
 
-.contact-container {
-    height: 100vh;
+#message {
+    height: 3em;
+    resize: 'off';
 }
 
-.form-container {
-    width: 20%;
-}
-
-.form-item {
-    position: relative;
-    width: 100%;
-}
-
-.contact-label {
-    text-transform: uppercase;
-    position: absolute;
+#message .input-label {
     top: 0;
-    pointer-events: none;
-    color: var(--dark-social-icon);
-    font-family: Saira;
-    transition: transform .5s ease-out;
-}
-
-#contact-form {
-    font-family: Saira;
-    color: var(--dark-text);
-}
-
-.inputs {
-    gap: 20px;
-}
-
-.inputs .form-item::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 105%;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: var(--dark-social-icon);
-}
-
-.contact-input {
-    width: 100%;
-    height: 1.2em;
-    background-color: transparent;
-    border: none;
-    color: var(--dark-social-icon);
-    outline: none;
-}
-
-/* .contact-input:focus, .contact-input:valid {
-    color: red;
-    border: solid 1px white; 
-} */
-
-.contact-input:focus + .contact-label, .contact-input:valid + .contact-label {
-    transform: translateY(-100%);
 }
 
 #send-form {

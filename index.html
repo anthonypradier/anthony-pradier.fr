@@ -508,34 +508,19 @@
 
         <!-- CONTACT -->
         <section id="contact">
-            <div class="contact-container container">
+            <div class="contact-container">
                 <h1 class="title section-title">me contacter</h1>
 
                 <!---->
-                <div class="form-container">
+                <div class="form-container borderr">
                     <form action="" id="contact-form" class="">
                         <div class="inputs flex-center flex-column">
-                            <!--
-                                <div class="form-item">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="user-name"
-                                        class="contact-input"
-                                        autocomplete="off"
-                                        required
-                                    />
-                                    <div class="contact-label">
-                                        nom & prénom<span class="form-require"
-                                            >*</span
-                                        >
-                                    </div>
-                                </div>
-                            -->
                             <label class="input">
                                 <input
                                     class="input-field"
                                     type="text"
+                                    id="user-name"
+                                    required
                                     placeholder=" "
                                 />
                                 <span class="input-label"
@@ -545,81 +530,98 @@
                                 >
                             </label>
 
-                            <div class="form-item">
+                            <label class="input">
                                 <input
+                                    class="input-field"
                                     type="email"
-                                    name="email"
                                     id="user-email"
-                                    class="contact-input"
-                                    autocomplete="off"
                                     required
-                                />
-                                <div class="contact-label">
-                                    adresse e-mail<span class="form-require"
-                                        >*</span
-                                    >
-                                </div>
-                            </div>
-
-                            <!--
-                            
-                                <div class="form-item">
-                                    <input
-                                        type="number"
-                                        name="number"
-                                        id="user_number"
-                                        class="contact-input"
-                                        onKeyPress="if(this.value.length==10) return false;"
-                                        autocomplete="off"
-                                    />
-                                    <div class="contact-label">
-                                        numéro de téléphone
-                                    </div>
-                                </div>
-                            -->
-
-                            <div class="form-item">
-                                <input
-                                    type="text"
-                                    name="company"
-                                    id="company"
-                                    class="contact-input"
-                                    autocomplete="off"
-                                />
-                                <div class="contact-label">entreprise</div>
-                            </div>
-
-                            <div class="form-item">
-                                <div class="contact-label">
-                                    sujet<span class="form-require">*</span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    id="subject"
-                                    class="contact-input"
-                                    autocomplete="off"
-                                    required
-                                />
-                            </div>
-
-                            <div class="form-item">
-                                <div class="contact-label">
-                                    écrivez votre message
-                                </div>
-                                <textarea
-                                    name="message"
-                                    id="message"
-                                    class="contact-input"
                                     placeholder=" "
-                                    autocomplete="off"
+                                />
+                                <span class="input-label"
+                                    >adresse e-mail<span class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
+
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="number"
+                                    id="user-number"
+                                    placeholder=" "
+                                />
+                                <span class="input-label"
+                                    >numéro de telephone</span
+                                >
+                            </label>
+
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="text"
+                                    id="user-company"
+                                    placeholder=" "
+                                />
+                                <span class="input-label">entreprise</span>
+                            </label>
+
+                            <label class="input">
+                                <input
+                                    class="input-field"
+                                    type="text"
+                                    id="subject"
                                     required
+                                    placeholder=" "
+                                />
+                                <span class="input-label"
+                                    >sujet<span class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
+
+                            <label class="input">
+                                <textarea
+                                    class="input-field"
+                                    type="text"
+                                    id="message"
+                                    required
+                                    placeholder=" "
                                 ></textarea>
-                            </div>
+                                <span class="input-label"
+                                    >écrivez votre message<span
+                                        class="form-require"
+                                        >*</span
+                                    ></span
+                                >
+                            </label>
                         </div>
 
-                        <div class="form-item">
+                        <div class="form-btns">
                             <input
+                                class="custom-empty-btn"
+                                type="button"
+                                value="Insagram"
+                            />
+                            <input
+                                class="custom-empty-btn"
+                                type="button"
+                                value="LinkedIn"
+                            />
+                            <input
+                                class="custom-empty-btn"
+                                type="button"
+                                value="X"
+                            />
+                            <input
+                                class="custom-empty-btn"
+                                type="button"
+                                value="Bouche à oreille"
+                            />
+                            <input
+                                class="custom-fill-btn"
                                 id="send-form"
                                 type="submit"
                                 value="Envoyer"
@@ -627,7 +629,6 @@
                         </div>
                     </form>
                 </div>
-                <div class="separator w90"></div>
             </div>
         </section>
 
