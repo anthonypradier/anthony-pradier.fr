@@ -412,13 +412,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     margin-left: 80px;
     max-width: 1400px;
-}
-
-
-.contact-container {
     height: 100vh;
 }
 
@@ -525,6 +522,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     font-weight: normal;
     color: var(--dark-social-icon);
 }
+
+/* TODO: make the line scale on focus - create a specific div */
+/* .input-field:focus-within::after {
+    width: 120%;
+} */
 
 .form-btns {
     display: flex;
