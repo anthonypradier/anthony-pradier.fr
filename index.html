@@ -512,7 +512,7 @@
                 <h1 class="title section-title">me contacter</h1>
 
                 <!---->
-                <div class="form-container borderr">
+                <div class="form-container">
                     <form action="" id="contact-form" class="">
                         <div class="inputs flex-center flex-column">
                             <label class="input">
@@ -599,34 +599,77 @@
                             </label>
                         </div>
 
+                        <h3 class="text">
+                            comment avez-vous entendu parler de moi ?
+                        </h3>
+
                         <div class="form-btns">
-                            <input
-                                class="custom-empty-btn"
-                                type="button"
-                                value="Insagram"
-                            />
-                            <input
-                                class="custom-empty-btn"
-                                type="button"
-                                value="LinkedIn"
-                            />
-                            <input
-                                class="custom-empty-btn"
-                                type="button"
-                                value="X"
-                            />
-                            <input
-                                class="custom-empty-btn"
-                                type="button"
-                                value="Bouche à oreille"
-                            />
-                            <input
-                                class="custom-fill-btn"
-                                id="send-form"
-                                type="submit"
-                                value="Envoyer"
-                            />
+                            <div class="form-btn">
+                                <input
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="instagram"
+                                    value="instagram"
+                                />
+                                <label class="btn-label-box" for="instagram">
+                                    <div class="btn-label">Instagram</div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="X"
+                                    value="X"
+                                />
+                                <label class="btn-label-box" for="X">
+                                    <div class="btn-label">X</div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    class="btn-input"
+                                    type="checkbox"
+                                    checked
+                                    name="linkedin"
+                                    value="LinkedIn"
+                                />
+                                <label class="btn-label-box" for="linkedin">
+                                    <div class="btn-label">LinkedIn</div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="wom"
+                                    value="bouche à oreille"
+                                />
+                                <!-- wom = word of mouth = bouche à oreille -->
+                                <label class="btn-label-box" for="wom">
+                                    <div class="btn-label">
+                                        Bouche à oreille
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-btn">
+                                <input
+                                    class="btn-input"
+                                    type="checkbox"
+                                    name="other"
+                                    value="Autre"
+                                />
+                                <label class="btn-label-box" for="other">
+                                    <div class="btn-label">Autre</div>
+                                </label>
+                            </div>
                         </div>
+                        <input
+                            class="custom-fill-btn custom-btn"
+                            id="send-form"
+                            type="submit"
+                            value="Envoyer"
+                        />
                     </form>
                 </div>
             </div>

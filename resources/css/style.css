@@ -414,7 +414,7 @@ section {
     align-items: center;
     gap: 30px;
     margin-left: 80px;
-    min-width: 1400px;
+    max-width: 1400px;
 }
 
 
@@ -423,7 +423,7 @@ section {
 }
 
 .form-container {
-    width: 20%;
+    width: 30%;
 }
 
 .form-item {
@@ -431,11 +431,17 @@ section {
 }
 
 #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     font-family: Saira;
     color: var(--dark-text);
 }
 
 .inputs {
+    width: 100%;
     gap: 30px;
 }
 
@@ -473,7 +479,7 @@ section {
     display: block;
     width: 100%;
     height: 2em;
-    font-size: 1em;
+    font-size: 1.1em;
     border: none;
     color: var(--dark-text);
     background: transparent;
@@ -486,20 +492,92 @@ section {
 }
 
 #message {
-    height: 3em;
-    resize: 'off';
+    height: 5em;
+    font-family: Saira;
 }
 
 #message .input-label {
     top: 0;
 }
 
-#send-form {
-    width: 100px;
-    padding: 5px;
-    border: solid 1px var(--dark-subtitle);
-    border-radius: 1em;
+#contact-form h3 {
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: normal;
+    color: var(--dark-social-icon);
 }
+
+.form-btns {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.form-btn {
+    position: relative;
+    width:max-content;
+    min-width: 80px;
+    height: 2em;
+}
+
+.form-btn input {
+    display: none;
+}
+
+.form-btn label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    /* width: max(max-content, 100%); */
+    width: max-content;
+    min-width: 80px;
+    height: 100%;
+    cursor: pointer;
+    border: solid 2px var(--dark-social-icon);
+    border-radius: 1em;
+    text-align: center;
+    font-size: .9em;
+    padding: 3px;
+    transition: all .2s ease;
+}
+
+.btn-label {
+    width: max-content;
+    text-wrap: nowrap;
+    color: var(--dark-social-icon);
+    transition: all .2s ease;
+}
+
+.btn-input:hover + .btn-label {
+    color: var(--dark-title);
+}
+
+.form-btn:hover .btn-label-box {
+    color: var(--dark-title);
+    border: solid 2px var(--dark-title);
+}
+
+.btn-input:checked + .btn-label {
+    color: var(--dark-title);
+}
+
+.btn-input:checked  + .btn-label-box {
+    border: solid 2px var(--dark-title);
+}
+
+#send-form {
+    font-family: Saira;
+    cursor: pointer;
+    width: 100px;
+    height: 2.5em;
+    border-radius: 1.2em;
+    font-size: 1.1em;
+}
+
 
 /* FOOTER */
 
