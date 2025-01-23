@@ -3,12 +3,19 @@
     --dark-secondary: #14121F;
     --dark-tertiary: #291F43;
 
+    --dark-primary-solid: #6E56CF;
+    --dark-secondary-solid: #7D66D9;
+
     --dark-title: #BAA7FF;
     --dark-subtitle: #E2DDFE;
     --dark-nav-icon: #E2DDFE;
-    --dark-icon-hover: #D19DFF;
     --dark-social-icon: #B4B4B4;
+    --dark-icon-hover: #BAA7FF;
+    --dark-skill-icon: #B4B4B4;
     --dark-text: #EEEEEE;
+
+    --dark-btn-border: #BAA7FF;
+    --dark-btn-text: #BAA7FF;
 
     --dark-primary-separator: #473876;
     --dark-secondary-separator: #291F43;

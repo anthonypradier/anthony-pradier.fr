@@ -3,11 +3,14 @@
     --dark-secondary: #14121F;
     --dark-tertiary: #291F43;
 
+    --dark-primary-solid: #6E56CF;
+    --dark-secondary-solid: #7D66D9;
+
     --dark-title: #BAA7FF;
     --dark-subtitle: #E2DDFE;
     --dark-nav-icon: #E2DDFE;
     --dark-social-icon: #B4B4B4;
-    --dark-icon-hover: #D19DFF;
+    --dark-icon-hover: #BAA7FF;
     --dark-skill-icon: #B4B4B4;
     --dark-text: #EEEEEE;
 
@@ -405,6 +408,100 @@ section {
     right: 0%;
     text-decoration: none;
 }
+
+/* CAREER */
+
+.timeline {
+    position: relative;
+    width: 80%;
+    height: 400px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    top: 10px;
+    left: 0;
+    bottom: 10px;
+    background-color: var(--dark-title);
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-right: solid 4px var(--dark-title);
+    border-bottom: solid 4px var(--dark-title);
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    /* background-color: var(--dark-secondary); */
+    margin-left: 20px;
+}
+
+.article .date {
+    position: absolute;
+    /* z-index: 2; */
+    top: -45px;
+    left: 40px;
+    font-size: 4em;
+    /* font-weight: bolder; */
+    color: var(--dark-text);
+    opacity: .2;
+}
+
+.article .name {
+    margin-left: 5px;
+    font-size: 1.7em;
+    font-family: Anek;
+    font-weight: bolder;
+    color: var(--dark-subtitle);
+    /* z-index: 10; */
+}
+
+.article .description {
+    position: relative;
+    font-size: 1.2em;
+    font-family: Saira;
+    padding-left: 20px;
+    color: var(--dark-text);
+}
+
+.article .description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: var(--dark-social-icon);
+}
+
+.article::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -25px;
+    rotate: 45deg;
+    /* transform: translateY(-50%); */
+    translate: 0 -50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark-primary);
+    border: solid 2px var(--dark-title);
+    border-radius: 1px;
+}
+
 
 /* CONTACT */
 
