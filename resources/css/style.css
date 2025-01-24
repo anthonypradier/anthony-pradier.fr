@@ -413,8 +413,13 @@ section {
 
 .timeline {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 60px;
     width: 80%;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .timeline::before {
@@ -423,20 +428,22 @@ section {
     width: 4px;
     top: 10px;
     left: 0;
-    bottom: 10px;
+    bottom: 4px;
     background-color: var(--dark-title);
 }
 
 .timeline::after {
     content: "";
     position: absolute;
-    bottom: 4px;
+    bottom: 0px;
     left: 0;
     width: 12px;
     height: 12px;
     border-right: solid 4px var(--dark-title);
     border-bottom: solid 4px var(--dark-title);
     transform: rotate(45deg) translateX(-50%);
+    /* rotate: 0 0 1 45deg;
+    translate: -50% 0; */
 }
 
 .article {
@@ -444,37 +451,54 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    /* gap: 2px; */
     /* background-color: var(--dark-secondary); */
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .article .date {
     position: absolute;
     /* z-index: 2; */
-    top: -45px;
+    top: -55px;
     left: 40px;
-    font-size: 4em;
+    font-size: clamp(4em, 6.3vw, 7em);
     /* font-weight: bolder; */
-    color: var(--dark-text);
-    opacity: .2;
+    color: var(--dark-title);
+    opacity: .3;
 }
 
 .article .name {
-    margin-left: 5px;
-    font-size: 1.7em;
+    margin-left: 8px;
+    font-size: clamp(1.2em, 1.8vw, 2em);
     font-family: Anek;
-    font-weight: bolder;
+    /* font-weight: 600; */
     color: var(--dark-subtitle);
     /* z-index: 10; */
 }
 
+.article .course {
+    font-family: Anek;
+    font-size: clamp(1.1em, 1.5vw, 1.8em);
+    margin-left: 25px;
+    color: var(--dark-subtitle);
+}
+
 .article .description {
     position: relative;
-    font-size: 1.2em;
+    font-size: clamp(.8em, 1.1vw, 1.5em);
     font-family: Saira;
     padding-left: 20px;
     color: var(--dark-text);
+}
+
+.article .description a {
+    text-decoration: underline;
+    color: var(--dark-subtitle);
+    transition: all .2s ease;
+}
+
+.article .description a:hover {
+    color: var(--dark-title);
 }
 
 .article .description::before {
@@ -491,7 +515,7 @@ section {
     position: absolute;
     content: "";
     top: 50%;
-    left: -25px;
+    left: -35px;
     rotate: 45deg;
     /* transform: translateY(-50%); */
     translate: 0 -50%;
@@ -509,11 +533,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     gap: 30px;
-    margin-left: 80px;
+    margin: 20px 0 40px 80px;
     max-width: 1400px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .form-container {
@@ -868,6 +892,15 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
         width: max-content;
         right: none;
     }
+
+    /* CAREER */
+
+    .article .date {
+        top: -40px;
+        left: 30px;
+    }
+
+    /* FOOTER */
 
     .footer {
         height: 200px;
