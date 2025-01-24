@@ -34,7 +34,17 @@
 }
 
 @font-face {
-    font-family: 'Open sans';
+    font-family: 'Josans';
+    src: url('../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Joslab';
+    src: url('../fonts/Josefin_Slab/static/JosefinSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Opensans';
     src: url('../fonts/Open_sans/static/OpenSans-Regular.ttf');
 }
 
@@ -147,14 +157,15 @@
 }
 
 .title {
-    font-family: Anek;
+    font-family: Josans;
 }
 
 .section-title {
     margin-top: 30px;
-    font-size: max(3.6vw, 2em);
-    font-family: Anek;
+    font-size: clamp(2.2em, 3.6vw, 4em);
+    font-family: Josans;
     text-transform: uppercase;
+    font-weight: 400;
     color: var(--dark-title);
 }
 
@@ -174,7 +185,7 @@
     gap: 8px;
     width: max-content;
     height: max-content;
-    font-family: Open sans;
+    font-family: Opensans;
     font-size: .8em;
     padding: 5px;
     background-color: var(--dark-primary);
@@ -189,12 +200,3 @@
 .form-require {
     color: var(--dark-title);
 }
-
-/* .custom-btn {
-    width: max-content;
-    min-width: 80px;
-    height: max-content;
-    padding: 5px;
-    border: solid 1px var(--dark-subtitle);
-    border-radius: 1em;
-} */

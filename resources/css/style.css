@@ -33,6 +33,21 @@
     src: url('../fonts/Anek_Gurmukhi/static/AnekGurmukhi-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Josans';
+    src: url('../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Joslab';
+    src: url('../fonts/Josefin_Slab/static/JosefinSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: url('../fonts/Open_sans/static/OpenSans-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -184,17 +199,18 @@ section {
 
 .header-text .separator {
     width: 70%;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .main-title {
     color: var(--dark-title);
     font-size: clamp(2.7em, 5.7vw, 6.5em);
-    font-weight: 1000;
+    font-weight: 500;
 }
 
 .header-text h4 {
-    font-weight: 500;
+    font-size: clamp(.8em, 1.3vw, 2em);
+    font-weight: 400;
     color: var(--dark-subtitle);
 }
 
@@ -411,13 +427,26 @@ section {
 
 /* CAREER */
 
+.career-container {
+    position: relative;
+    /* min-height: 100vh; */
+}
+
+#career-separator {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 45px;
+}
+
 .timeline {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
-    gap: 60px;
+    margin-top: 20px;
+    gap: 70px;
     width: 80%;
     /* height: 400px; */
 }
@@ -458,11 +487,12 @@ section {
 
 .article .date {
     position: absolute;
-    /* z-index: 2; */
-    top: -55px;
+    top: -65px;
     left: 40px;
+    font-family: 'Times New Roman', Times, serif;
     font-size: clamp(4em, 6.3vw, 7em);
-    /* font-weight: bolder; */
+    /* font-weight: 800; */
+    font-style: italic;
     color: var(--dark-title);
     opacity: .3;
 }
@@ -470,7 +500,7 @@ section {
 .article .name {
     margin-left: 8px;
     font-size: clamp(1.2em, 1.8vw, 2em);
-    font-family: Anek;
+    font-family: Josans;
     /* font-weight: 600; */
     color: var(--dark-subtitle);
     /* z-index: 10; */
@@ -479,6 +509,7 @@ section {
 .article .course {
     font-family: Anek;
     font-size: clamp(1.1em, 1.5vw, 1.8em);
+    margin-top: 5px;
     margin-left: 25px;
     color: var(--dark-subtitle);
 }
@@ -533,11 +564,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
-    gap: 30px;
-    margin: 20px 0 40px 80px;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0 0px 80px;
     max-width: 1400px;
-    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 .form-container {
