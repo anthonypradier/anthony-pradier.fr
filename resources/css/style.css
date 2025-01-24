@@ -240,6 +240,67 @@ section {
     border-radius: 50%;
 }
 
+.header-butons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 80%;
+    left: 50%;
+    width: 300px;
+    height: 45px;
+    /* background-color: red; */
+    transform: translateX(-50%);
+}
+
+.header-cv-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+}
+
+.header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: solid 2px var(--dark-social-icon);
+    border-radius: 2.5em;
+    color: var(--dark-social-icon);
+    font-family: Saira;
+    text-decoration: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.header-btn:hover, .header-cv-btn:hover .header-btn {
+    border: solid 2px var(--dark-btn-border);
+    color: var(--dark-btn-text);
+}
+
+.header-cv-btn:hover #cv-download {
+    transform: translateY(110%);
+    opacity: 1;
+    transition: transform .4s ease, opacity .3s ease;
+}
+
+#about-me {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    font-size: .90em;
+}
+
+#cv-download {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: .5;
+}
+
 #header-separator {
     position: absolute;
     left: 50%;
