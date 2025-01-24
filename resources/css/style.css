@@ -413,7 +413,7 @@ section {
 }
 
 .projects {
-    max-height: 350px;
+    max-height: 500px;
     height: max(30vw, 250px);
     width: 40%;
     gap: 10px;
@@ -460,7 +460,8 @@ section {
 
 .project-box h1 {
     margin: 5px 10px;
-    /* font-family: Saira; */
+    font-size: clamp(1.2em, 2.2vw, 2.5em);
+    font-family: Josans;
 }
 
 .project-bg {}
@@ -960,6 +961,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
         transform: translate(0, 0);
     }
 
+    /* PROJECTS */
+
     .projects-presentation {
         flex-direction: column;
         width: 90%;
@@ -992,6 +995,16 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
     .projects a:nth-child(3) {
         transform: translateX(0);
+    }
+
+
+
+    .project-box h1 {
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+        font-size: 2em;
     }
 
     .all-projects-a {
