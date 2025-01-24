@@ -64,7 +64,7 @@ body {
 section {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: var(--dark-primary);
 }
 
@@ -76,7 +76,7 @@ section {
     gap: 30px;
     margin-left: 80px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1700px;
 }
 
 .nav-container {
@@ -182,7 +182,7 @@ section {
 .header {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--dark-primary);
 }
@@ -198,7 +198,7 @@ section {
     height: 100%;
     margin-left: 80px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1700px;
 }
 
 .header-text {
@@ -243,8 +243,7 @@ section {
     background-color: var(--dark-text);
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    max-width: 350px;
-    width: max(24vw, 200px);
+    width: clamp(200px, 24vw, 400px);
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: fill;
