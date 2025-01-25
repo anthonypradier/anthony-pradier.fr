@@ -290,34 +290,56 @@ section {
     color: var(--dark-btn-text);
 }
 
-.header-btn svg {
+.hdr-btn-span svg {
+    fill: var(--dark-social-icon);
     transition: all .3s ease;
 }
 
-.header-btn:hover .header-btn path {
+.header-btn:hover span svg {
     fill: var(--dark-btn-text);
 }
 
 .header-cv-btn:hover #cv-download {
     transform: translateY(110%);
     opacity: 1;
-    /* transition: all 0.3s ease; */
 }
 
 #cv-show span:nth-child(2) {
     position: absolute;
+    left: 10px;
+    opacity: 1;
 }
 
-#cv-download span, #cv-show span:nth-child(2) {
-    /* display: none; */
+/* gérer les 2 boutons déroulants */
+
+.header-cv-btn:hover #cv-show span:nth-child(1) {
     opacity: 0;
-    /* transition: all .3s ease; */
+}
+
+.header-cv-btn:hover #cv-show span:nth-child(2) {
+    opacity: 1;
+    /* transition: all .2s ease; */
+}
+
+#cv-show span:nth-child(1) {
+    opacity: 1;
+    /* transition: all .2s ease; */
+}
+
+#cv-show span:nth-child(2) {
+    opacity: 0;
+}
+
+#cv-download span {
+    opacity: 0;
 }
 
 .header-cv-btn:hover #cv-download span {
     display: flex;
     opacity: 1;
 }
+
+/*  */
 
 #about-me {
     position: absolute;
