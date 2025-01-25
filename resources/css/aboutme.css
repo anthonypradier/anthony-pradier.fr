@@ -60,9 +60,55 @@ body {
 }
 
 .aboutme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 80%;
     max-width: 1700px;
+    color: var(--dark-text);
 }
+
+.aboutme::before, .aboutme::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    /* aspect-ratio: 1 / 1; */
+    border: solid 1px var(--dark-primary-border);
+}
+
+.aboutme::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.aboutme::after {
+    right: 0;
+    bottom: 0;
+    border-top: none;
+    border-left: none;
+}
+
+.aboutme h1 {
+    font-size: clamp(3em, 4.1vw, 5em);
+    text-align: center;
+    font-weight: 400;
+    color: var(--dark-title);
+}
+
+.abstract {
+    text-align: center;
+    font-size: clamp(1.2em, 1.4vw, 1.6em);
+}
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
 
 /* FOOTER */
 
