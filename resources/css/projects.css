@@ -184,6 +184,11 @@ header {
     gap: 50px;
 }
 
+.content-bloc p {
+    
+    font-size: clamp(.8em, 1.15vw, 1.5em);
+}
+
 .content-part {
     display: flex;
     justify-content: space-between;
@@ -201,7 +206,6 @@ header {
 .bloc-text {
     width: 45%;
     text-align: justify;
-    font-size: clamp(.8em, 1.15vw, 1.5em);
 }
 
 .content-part video {
