@@ -66,12 +66,13 @@ body {
     gap: 40px;
     background-color: var(--dark-primary);
     color: var(--dark-text);
+    /* min-height: 100vh; */
 }
 
 header {
     position: relative;
     height: clamp(100px, 15vw, 600px);
-    width: min(80vw, 1400px);
+    width: min(80vw, 1700px);
     background-color: var(--dark-primary);
     overflow: hidden;
 }
@@ -88,7 +89,7 @@ header {
     display: flex;
     justify-content: center;
     width: 80vw;
-    max-width: 1400px;
+    max-width: 1700px;
 }
 
 .content::before, .content::after {
@@ -119,8 +120,8 @@ header {
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
-    width: 80%;
-    margin: 50px 0;
+    /* width: 80%; */
+    margin: 50px;
 }
 
 .back {
@@ -224,7 +225,6 @@ header {
 
 .conclusion {
     text-align: center;
-    font-size: clamp(.9em, 1.15vw, 1.5em);
 }
 
 
