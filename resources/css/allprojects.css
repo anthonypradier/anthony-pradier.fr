@@ -1,0 +1,63 @@
+:root {
+    --dark-primary: #1B1525;
+    --dark-secondary: #14121F;
+    --dark-tertiary: #291F43;
+
+    --dark-primary-solid: #6E56CF;
+    --dark-secondary-solid: #7D66D9;
+
+    --dark-title: #BAA7FF;
+    --dark-subtitle: #E2DDFE;
+    --dark-nav-icon: #E2DDFE;
+    --dark-social-icon: #B4B4B4;
+    --dark-icon-hover: #BAA7FF;
+    --dark-skill-icon: #B4B4B4;
+    --dark-text: #EEEEEE;
+
+    --dark-btn-border: #BAA7FF;
+    --dark-btn-text: #BAA7FF;
+
+    --dark-primary-separator: #473876;
+    --dark-secondary-separator: #291F43;
+    --dark-primary-border: #3C2E69;
+    --dark-secondary-border: #56468B;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: url('../fonts/Saira/static/Saira-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Anek';
+    src: url('../fonts/Anek_Gurmukhi/static/AnekGurmukhi-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Josans';
+    src: url('../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Joslab';
+    src: url('../fonts/Josefin_Slab/static/JosefinSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Opensans';
+    src: url('../fonts/Open_sans/static/OpenSans-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-primary);
+}
