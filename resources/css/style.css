@@ -499,8 +499,9 @@ section {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    border: solid 2px var(--dark-secondary-border);
-    background-color: rgba(41, 31, 67, .4);
+    /* border: solid 2px var(--dark-secondary-border); */
+    box-shadow: 0 0 5px 0px var(--dark-secondary-border);
+    background-color: rgba(41, 31, 67, .2);
     /*#291F43 tertiary*/
     background-position: center;
     background-repeat: no-repeat;
@@ -508,18 +509,43 @@ section {
     background-size: 110%;
     /* filter: brightness(0.3); */
     transition: all .3s ease;
+    overflow: hidden;
 }
 
 .project-box:hover {
     background-size: 100%;
-    background-color: rgba(41, 31, 67, .2);
+    background-color: rgba(41, 31, 67, .8);
     transition: background-size 8s ease, background-color .3s ease;
 }
 
+.project-box:hover h1 {
+    transform: translateY(0);
+    opacity: 1;
+    /* transition: all .3s ease; */
+}
+
+.project-box:hover .project-desc {
+    transform: translateX(0);
+    opacity: 1;
+    /* transition: all .3s ease; */
+}
+
 .project-box h1 {
+    transform: translateY(-20%);
+    opacity: .0;
     margin: 5px 10px;
     font-size: clamp(1.2em, 2.2vw, 2.5em);
     font-family: Josans;
+    transition: all .3s ease;
+}
+
+.project-desc {
+    margin: 10px;
+    transform: translateY(30%);
+    opacity: .0;
+    color: var(--dark-text);
+    font-size: clamp(.8em, 1.2vw, 1.5em);
+    transition: all .4s ease;
 }
 
 .project-bg {}
@@ -615,16 +641,27 @@ section {
     margin-left: 30px;
 }
 
+.article:hover::before {
+    transform: scale(1.5);
+    /* translate: -10px -50%; */
+    background-color: var(--dark-title);
+}
+
 .article .date {
     position: absolute;
     top: -65px;
     left: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-size: clamp(4em, 6.3vw, 7em);
-    /* font-weight: 800; */
     font-style: italic;
     color: var(--dark-title);
-    opacity: .3;
+    opacity: .2;
+    transition: all .3s ease;
+}
+
+.article:hover .date {
+    opacity: .4;
+    transition: all .3s ease;
 }
 
 .article .name {
@@ -685,6 +722,7 @@ section {
     background-color: var(--dark-primary);
     border: solid 2px var(--dark-title);
     border-radius: 1px;
+    transition: all .3s ease;
 }
 
 
