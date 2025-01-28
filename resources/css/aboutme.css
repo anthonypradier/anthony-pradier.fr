@@ -147,6 +147,10 @@ body {
     transform: translateX(-20px);
 }
 
+.content-bloc img {
+    width: 80%;
+}
+
 .center-text {
     text-align: center;
     font-size: clamp(.8em, 1.15vw, 1.5em);
