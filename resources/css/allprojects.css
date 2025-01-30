@@ -149,7 +149,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     margin-top: 30px;
-    gap: 80px;
+    gap: 50px;
 }
 
 .project {
@@ -157,6 +157,7 @@ body {
     border-radius: 10px;
     background-color: var(--dark-tertiary);
     text-decoration: none;
+    transition: all .3s ease;
 }
 
 .project:hover {
@@ -165,8 +166,74 @@ body {
 }
 
 .project-box {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+}
+
+
+.project .head {
+    display: flex;
+    align-items: center;
+}
+
+.project h1 {
+    position: relative;
+    color: var(--dark-subtitle);
+    font-size: clamp(2em, 3.5vw, 3.5em);
+}
+
+.project p {
+    color: var(--dark-text);
+}
+
+.finish::after {
+    content: "Terminé";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    background-color: rgba(31, 235, 31, 0.7);
+    color: var(--dark-text);
+    border-radius: 2em;
+    font-size: .3em;
+    font-family: Saira;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+.progress::after {
+    content: "En cours";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    background-color: rgb(165, 126, 7);
+    color: var(--dark-text);
+    border-radius: 2em;
+    font-size: .3em;
+    font-family: Saira;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+.pending::after {
+    content: "En cours";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    background-color: rgb(5, 148, 5);
+    color: var(--dark-text);
+    border-radius: 2em;
+    font-size: .3em;
+    font-family: Saira;
+    padding: 0 5px;
+    vertical-align: middle;
 }
 
 #p1 {
@@ -181,7 +248,7 @@ body {
 
 #p3 {
     grid-column: 1 / 2;
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
 }
 
 #p4 {
@@ -190,13 +257,15 @@ body {
 }
 
 #p5 {
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
     grid-row: 3 / 4;
+    pointer-events: none;
 }
 
 #p6 {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+    pointer-events: none;
 }
 
 /* FOOTER */
