@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="../css/projects.css" />
         <link rel="stylesheet" href="../css/framework.css" />
-        <link rel="stylesheet" href="../css/allprojects.css" />
         <link rel="stylesheet" href="../css/icons.css" />
 
         <link
@@ -12,11 +13,20 @@
             href="../images/Logo_ESIEE_Paris-300x200.jpg"
             type="image/x-icon"
         />
-        <title>Tous mes projets</title>
+
+        <title>Zuul Bad</title>
     </head>
     <body>
-        <main class="ap-container">
-            <div class="allprojects">
+        <header>
+            <img
+                src="../images/Zuul_banner.png"
+                alt="Zuul banner"
+                class="banner none"
+            />
+        </header>
+
+        <section class="content">
+            <div class="project-content">
                 <a class="back" href="../../index.html#projects">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -31,124 +41,31 @@
                     </svg>
                 </a>
 
-                <div class="content text">
-                    <h1 class="title">Tous mes projets</h1>
+                <h1 class="project-name title">Editile</h1>
+                <p class="project-description text">
+                    Éditeur de carte pour jeu de plateforme 2D développé en
+                    <span class="boxed-icon"
+                        ><img src="../images/SVG/java.svg" alt="Java icon" />
+                        Java</span
+                    >. Je compte utiliser cet éditeur pour créer les différents
+                    niveaux du jeu Upsidedown que je développe en parallèle.
+                    Étant donné la manière dont je traite les données relatives
+                    aux niveaux, il me fallait une solution pratique qui
+                    répondait exactement à ma problématique. Les logiciels déjà
+                    existants pouvaient répondre à mes besoins, mais je préfère
+                    toujours développer mes propres outils pour mieux comprendre
+                    les problématiques et les solutions à apporter. De plus,
+                    cela me permet de m'éviter d'apprendre un n-ième outil pour
+                    lequel je n'utiliserai que 10% des fonctionnalités.
+                </p>
+                <div class="separator"></div>
 
-                    <div class="projects-container">
-                        <a
-                            href="../pages/upsidedown.html"
-                            class="project long"
-                            id="p1"
-                        >
-                            <div class="project-box">
-                                <div class="head">
-                                    <h1 class="title progress">Upsidedown</h1>
-                                </div>
-                                <p class="text">
-                                    Projet personnel de développement d'un jeu
-                                    de plateforme
-                                </p>
-                            </div>
-                        </a>
-                        <a
-                            href="../pages/zuul.html"
-                            class="project short"
-                            id="p2"
-                        >
-                            <div class="project-box">
-                                <div class="head">
-                                    <h1 class="title finish">Zuul bad</h1>
-                                </div>
-                                <p class="text">
-                                    Projet académique de développement d'un jeu
-                                    d'aventure textuel en Java
-                                </p>
-                            </div>
-                        </a>
-                        <a
-                            href="../pages/ration.html"
-                            class="project short"
-                            id="p3"
-                        >
-                            <div class="project-box">
-                                <div class="head">
-                                    <h1 class="title pending">Ration</h1>
-                                </div>
-                                <p class="text">
-                                    Développement d'une application de gestion
-                                    de ration pour la randonnée
-                                </p>
-                            </div>
-                        </a>
-                        <a
-                            href="../pages/minemarket.html"
-                            class="project long"
-                            id="p4"
-                        >
-                            <div class="project-box">
-                                <div class="head">
-                                    <h1 class="title progress">MineMarket</h1>
-                                </div>
-                                <p class="text">
-                                    Projet en équipe de réstauration d'une
-                                    pleteforme de vente de modes en ligne
-                                </p>
-                            </div>
-                        </a>
-                        <a
-                            href="../pages/portfolio.html"
-                            class="project long"
-                            id="p5"
-                        >
-                            <div class="project-box">
-                                <div class="head">
-                                    <h1 class="title pending">
-                                        Portfolio v2.0
-                                    </h1>
-                                </div>
-                                <p class="text">
-                                    Projet personnel de renouvellement de mon
-                                    actuel portfolio avec de nouvelles
-                                    technologies
-                                </p>
-                            </div>
-                        </a>
-                        <a
-                            href="../pages/jeuneami.html"
-                            class="project short"
-                            id="p6"
-                        >
-                            <div class="project-box">
-                                <div class="head">
-                                    <h1 class="title pending">Jeune ami</h1>
-                                </div>
-                                <p class="text">
-                                    Développement d'une application de gestion
-                                    de champs ou de potager
-                                </p>
-                            </div>
-                        </a>
-                        <a
-                            href="../pages/editile.html"
-                            class="project short"
-                            id="p7"
-                        >
-                            <div class="project-box">
-                                <div class="head">
-                                    <h1 class="title progress">Editile</h1>
-                                </div>
-                                <p class="text">
-                                    Éditeur de monde pour Upsidedown
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <div class="content-bloc"></div>
             </div>
-        </main>
+        </section>
 
         <!-- FOOTER -->
-        <footer class="footer w100">
+        <footer class="footer">
             <div class="footer-container">
                 <p class="footer-text text">
                     Design et développement : Anthony Pradier
@@ -228,10 +145,7 @@
                             />
                         </svg>
                     </a>
-                    <a
-                        href="https://x.com/Papi_04_?t=OQGqUngULHFk3xq2wpJODg&s=09"
-                        target="_blank"
-                    >
+                    <a href="https://x.com/Papi_04_" target="_blank">
                         <!-- Twitter X -->
                         <svg
                             id="twitter"
